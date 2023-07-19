@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GODWASP</title>
+    <link rel="stylesheet" href="style.css">
+    <title>---</title>
 </head>
 <body>
-    <h1>HELLOOO</h1>
+    <div class="container">
+        <div class="search">
+            <img src="./images/location.png" alt="Image Not Found" class="location-icon">
+            <input type="text" placeholder="Enter your location" spellcheck="false" class="input">
+            <button><img src="./images/search.png" alt="Image Not Found"></button>
+        </div>
+        <div class="weather">
+            <img src="./images/rain.png" alt="Image Not Found" class="weather-image">
+            <h1 class="temp">10°C</h1>
+            <h2 class="city">Warsaw</h2>
+        </div>
+        <div class="error">
+            <img src="./images/error.png" alt="Image Not Found">
+            <p>Ooops! Location Not Found!</p>
+        </div>
+    </div>
+
+
+    <script>
+        window.apiKey = "d6cbc69741d75bcf636359b222ea9fb2";
+      </script>
+    <script src="app.js"></script>
 </body>
 </html>
